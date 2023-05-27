@@ -10,4 +10,4 @@ on:
         uses: pozile/auto-assign-issues@v1
         with:
           assignees:  deraowl
-          repo-token: ${{ secrets.GITHUB.TOKEN  }}
+          repo-token: ${{ secrets.GITHUB_TOKEN  }}
