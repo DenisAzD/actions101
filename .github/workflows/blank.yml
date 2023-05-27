@@ -2,12 +2,12 @@ name: GH Actions
 on:
   issues:
     types: [opened]
-  jobs:
-    auto-assign:
+jobs:
+  auto-assign:
     runs-on: ubuntu-latest
     steps:
       - name: 'Auto-assign PR'
-        uses: pozile/auto-assign-issues@v1
+        uses: kentaro-m/auto-assign-action@v1.2.0
         with:
           assignees:  deraowl
           repo-token: ${{ secrets.GITHUB_TOKEN  }}
